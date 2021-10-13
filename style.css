@@ -1,0 +1,220 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic);
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,700;1,300;1,400&display=swap');
+*{
+    font-family: 'Roboto', sans-serif;
+}
+.fa-redo-alt, .fa-window-maximize , .fa-window-restore{
+    font-size: 30px;
+        }
+        .top_container{
+     display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+        }
+        #Top_search{
+            width: 500px;
+    border-radius: 16px;
+    height: 30px;
+    outline: none;
+    border: none;
+box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+
+    padding-left: 11px;
+    transition: all 0.3s easy 0s;
+        }
+        .container{
+            display: grid;
+    place-items: center;
+        }
+        .td{
+            font-weight: bold;
+        }
+.toggle{
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: 0.5s;
+    font-size: 25px;
+    transition: all 0.3s easy 0s;
+
+}
+.toggle:before{
+    content:'\f186';
+    font-family: "Font Awesome 5 Free";
+}
+body .complete {
+    color: rgb(114, 111, 111)!important;
+    text-decoration: line-through;
+ }
+
+
+body{
+    color:hsl(147, 85%, 63%);
+    background-color: hsl(0, 0%, 26%);   
+}
+body .toggle{
+content: '\f185';
+font-family: "Font Awesome 5 Free";
+
+}
+#Top_search{
+  
+    background: #6e6d6d75;
+    color: rgb(38, 245, 31);
+}
+body.light{
+    color:hsl(0, 0%, 0%);
+    background-color: rgba(216, 248, 206, 0.56);
+}
+body.light .content li{
+color: greenyellow;
+
+}
+.fa-redo-alt:hover{
+    animation :rotate 1s linear;
+}
+
+@keyframes rotate {
+    0%{
+transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(
+            184deg
+            );
+    }
+    100%{
+        transform: rotate(360deg );
+    }
+    
+}
+
+/* inside container */
+.main{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+.todo{
+    border-radius: 8px;
+    width: 400px;
+    height: 500px;
+    background-color: rgb(170, 170, 170);
+ 
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    overflow: auto;
+    text-align: center;
+}
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+
+}
+.todo h1 span{
+ color: greenyellow;
+}
+.todo h1{
+    color: white;
+}
+#todo_input{
+    width: 243px;
+    height: 30px;
+    border-radius: 50px;
+    outline: none;
+    border: none;
+    padding: 7px;
+    padding-right: 50px;
+    box-shadow:
+    0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12)
+  ;
+}
+form{
+    position: relative;
+}
+#todosubmit{
+    outline: none;
+    border: none;
+    background: transparent;
+    font-size: 37px;
+    top: -4px;
+    left: 251px;
+    position: absolute;
+
+}
+
+
+
+ul{
+    list-style: none;
+}
+
+
+.content li {
+    background: #424242de;
+    width: 318px;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 19px;
+}
+.content li button{
+    outline: none;
+    border: none;
+    background: transparent;
+    color: red;
+    font-size: 21px;
+}
+/* right side tab */
+
+.api{
+    border-radius: 8px;
+    width: 400px;
+    height: 500px;
+    background-color: rgb(170, 170, 170);
+
+}
+.info_tab{
+    margin: 10px;
+}
+blockquote{
+    font-size: 1.4em;
+    width:60%;
+    margin:50px auto;
+    font-family:Open Sans;
+    font-style:italic;
+    color: #555555;
+    padding:1.2em 30px 1.2em 75px;
+    border-left:8px solid hsl(147, 85%, 63%) ;
+    line-height:1.6;
+    position: relative;
+    background:#EDEDED;
+  }
+
+  
+  blockquote::before{
+    font-family:Arial;
+    content: "\201C";
+    color:hsl(147, 85%, 63%);
+    font-size:4em;
+    position: absolute;
+    left: 10px;
+    top:-10px;
+  }
+  
+  blockquote::after{
+    content: '';
+  }
+  
